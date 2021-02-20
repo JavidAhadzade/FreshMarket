@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Shop1.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light "  >
+        <i class="fas fa-shopping-basket"  style="font-size: 35px; color: rgba(16, 78, 16, 0.904); margin-left: 170px; "></i>
+        <a class="navbar-brand " style="color:  rgba(16, 78, 16, 0.904); margin-left: 20px;" href="#">FreshMarket</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" style="margin-left: 350px;">
+            <li class="nav-item ">
+              <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active ">
+              <a class="nav-link " href="./Shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About.html">About</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="./Contact.html">Contact</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./Login.html"><i class="fas fa-user-circle" style="font-size: 25px; color: rgba(16, 78, 16, 0.904) ;"></i></a>
+              </li>
+              <li>
+                  <a class="nav-link" href="./Login.html"> Log In</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./Bag.html"> <i class="fab fa-shopify" style="font-size: 25px ; color: rgba(16, 78, 16, 0.904) ;margin-left: 70px;"></i></a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    
+      <h3 style="color: rgba(16, 78, 16, 0.904); text-align: center; margin-top: 40px; "> <b> Shop </b></h3>
+      <p style="text-align: center;">I'm a paragraph. Click here to add your own text and edit me.</p>
+
+      <div class="row" style="margin-top: 40px;"> 
+        <div class="col-md-4">
+            <h2 style="margin-left: 145px;">Filter By</h2>
+            <br>
+            <hr style="width: 300px; margin-right: 20px;">
+        </div>
+        <div class="col-md-8">
+            <select style="width: 180px; height: 30px; margin-left: 550px;">
+            <option>Sort by</option>
+            <option>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Newest</a>
+                </li>
+            </option>
+            <option>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Price(low to high)</a>
+                </li>
+            </option>
+            <option>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">price(high to low)</a>
+                </li>
+            </option>
+            <option>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Name(A-Z)</a>
+                </li>
+            </option>
+            <option>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Name(Z-A)</a>
+                </li>
+            </option>
+            <option>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Newest</a>
+                </li>
+            </option>
+            </select>
+            
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2.5" style="height: 100px;  width: 300px;">
+          <a class="nav-link " href="#" style="color: black; margin-left: 30px; " >Collection</a>
+          <a class="link" class="nav-link"  href="#" style="color: black; margin-left: 45px; " ><b>All</b></a><br>
+          <a class="link" class="nav-link " href="#" style="color: black; margin-left: 45px; " >Produce</a><br>
+          <a class="link" class="nav-link " href="#" style="color: black; margin-left: 45px; " >Dairy & Eggs</a><br>
+          <a class="link" class="nav-link " href="#" style="color: black; margin-left: 45px; " >Bread & Grains</a><br>
+          <a class="link" class="nav-link " href="#" style="color: black; margin-left: 45px; " >Household Goods</a><br>
+          <br>
+            <hr style="width: 280px; margin-right: 5px;">
+        </div>
+        <div class="col-md-0.5">
+          <a  id="hide" href="#" style="width: 30px; height: 3px;  color: black;" onclick="Show()"><i  class=" fas fa-minus" style="margin-left: 20px; margin-top: 12px;"></i></a>
+        </div>
+        <div class="col-md-1.5" >
+            <a class="nav-link" href="#" style="margin-left: 20px;"><img src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/320249_1100-800x825.jpg"style="width: 140px; height: 140px; margin-top: 25px;  "></a>   
+            <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+            <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('firstinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="firstinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('firstinput')"
+                style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+                <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                    <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+        </div>
+        <div class="col-md-1.5">
+            <a class="nav-link" href="#"><img src="../Online Grocery Store Website Template _ WIX_files/cheese.webp" 
+                style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+                <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+                <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('secondinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="secondinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('secondinput')"
+                    style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+                <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                    <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+        </div>
+        <div class="col-md-1.5">
+            <a class="nav-link" href="#" style="margin-left: 20px;" ><img src="http://www.ndtv.com/cooks/images/bread%20%281%29.jpg" style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+            <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+            <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('thirdinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="thirdinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('thirdinput')"
+                style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+                <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                    <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+        </div>
+        <div class="col-md-1.5">
+            <a class="nav-link" href="#" style="margin-left: 20px;"><img src="https://www.jennycancook.com/wp-content/uploads/2020/05/homemade_sesame_seed_hamburger_buns-1.jpg" style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+            <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+            <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('fourthinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="fourthinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('fourthinput')"
+                style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+                <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                    <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-1.5">
+            <a class="nav-link" href="#" style="margin-left: 20px;"><img src="https://dairyfarmersofcanada.ca/sites/default/files/styles/full_width_large/public/product_butter_hero.jpg?itok=pb4sjljs"style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+            <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+            <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('fifthinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="fifthinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('fifthinput')"
+                style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+                <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                    <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+        </div>
+        <div class="col-md-1.5">
+            <a class="nav-link" href="#" style="margin-left: 20px;"><img src="https://ae01.alicdn.com/kf/Hfbb22cfc074c49d5894ee2bd6b81e9793/Pastoral-Ceramic-Dinner-Plates-Deep-Plate-Steak-Dish-Dessert-Snack-Dishs-Porcelain-Fish-Plate-Dinnerware-Cake.jpg" 
+                style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+                <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+                <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('sixthinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="sixthinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('sixthinput')"
+                    style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+                <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                    <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+        </div>
+        <div class="col-md-1.5">
+            <a class="nav-link" href="#" style="margin-left: 20px;"><img src="https://www.bakingmad.com/BakingMad/media/content/Recipes/Cakes/Chocolate-showstopper-cake/1-Anti-gravity-cake-WEB.jpg" style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+            <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+            <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('seventhinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="seventhinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('seventhinput')"
+                style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+                <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                    <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+        </div>
+        <div class="col-md-1.5">
+            <a class="nav-link" href="#" style="margin-left: 20px;"><img src="https://www.consumerhalla.ng/cloud/hallalive//CustomerImages/1555506078854RICE%20PACKS%20NI.jpg" style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+            <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+            <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('eitghthinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="eitghthinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('eitghthinput')"
+                style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+                <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                    <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-1.5">
+          <a class="nav-link" href="#" style="margin-left: 20px;"><img src="https://www.beautytheshop.com/imgs/productos_cosmetica/resized/680x680/4084500839250.jpg" style="width: 140px; height: 140px; margin-top: 25px;"></a>  
+          <div class="top-left" style="position: absolute; top: 2px; left: 16px; margin-left: 460px; margin-top: 1010px;"><button style="background-color: rgb(15, 119, 58); height: 40px;"> <a class="nav-link" href="#" style="color: black;">Special Price</a></button></div> 
+          <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br><p class="p3" style="text-decoration: line-through; ">$9.99</p>  <p class="p4"> $8.99 </p></pre></a>
+          <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('ninethinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="ninethinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('ninethinput')"
+              style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+              <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                  <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+      </div>
+        <div class="col-md-1.5">
+            <a class="nav-link" href="#" style="margin-left: 20px;"><img src="https://www.diyetkolik.com/site_media/media/nutrition_images/spagetti.jpg" 
+                style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+                <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+                <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('tenthinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="tenthinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('tenthinput')"
+                    style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+                <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                    <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+        </div>
+        <div class="col-md-1.5">
+          <a class="nav-link" href="#"><img src="../Online Grocery Store Website Template _ WIX_files/Toilet paper.webp" style="width: 140px; height: 140px; margin-top: 25px;"></a>  
+          <div class="top-left" style="position: absolute; top: 2px; left: 16px; margin-left: 850px; margin-top: 1010px;"><button style="background-color: rgb(15, 119, 58); height: 40px;"> <a class="nav-link" href="#" style="color: black;">Special Price</a></button></div> 
+          <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br><p class="p3" style="text-decoration: line-through; ">$9.99</p>  <p class="p4"> $8.99 </p></pre></a>
+          <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('eleventhinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="eleventhinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('eleventhinput')"
+              style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+              <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                  <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+      </div>
+      <div class="col-md-1.5">
+        <a class="nav-link" href="#" style="margin-left: 20px;"><img src="http://moongroup.az/files/products/39024266_298069230957819_7053373843871629312_n.jpg" 
+            style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+            <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+            <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('twelvethinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="twelvethinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('twelvethinput')"
+                style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+            <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+    </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-1.5">
+          <a class="nav-link" href="#" style="margin-left: 20px;"><img src="https://www.melskitchencafe.com/wp-content/uploads/french-bread2.jpg" 
+              style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+              <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+              <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('twelvethinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="twelvethinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('twelvethinput')"
+                  style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+              <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                  <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+      </div>
+      <div class="col-md-1.5">
+        <a class="nav-link" href="#" style="margin-left: 20px;"><img src="https://simpla.az/media/catalog/product/cache/10/image/dcea85b79f53f476e63febbf0515a73f/a/r/ariel-pods-23--reng.jpg" 
+            style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+            <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+            <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('twelvethinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="twelvethinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('twelvethinput')"
+                style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+            <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+                <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+    </div>
+    <div class="col-md-1.5">
+      <a class="nav-link" href="#" style="margin-left: 20px;"><img src="https://static.grainger.com/rp/s/is/image/Grainger/41D777_AS02?hei=536&wid=536" 
+          style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+          <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+          <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('twelvethinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="twelvethinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('twelvethinput')"
+              style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+          <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+              <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+  </div>
+  <div class="col-md-1.5">
+    <a class="nav-link" href="#" style="margin-left: 20px;"><img src="https://marianila.com/media/catalog/product/cache/bb1b3f8f16798ae3fd991b6ce4831907/b/o/bouquet_300_ml.jpg" 
+        style="width: 140px; height: 140px; margin-top: 25px;"></a>   
+        <a class="nav-link" href="#" style="margin-left: 50px;"><pre>I'm a product <br>    $9.99</pre></a>
+        <div style=" margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white;"><pre><button  onclick="Decrease('twelvethinput')" style="margin-left: 7px; border: white solid ; background-color: white;" ><i class="fas fa-minus" ></i></button> <input  id="twelvethinput" style="width: 30px; height: 20px; margin-left: 5px; margin-top: 7px;"></input> <button  onclick="Increase('twelvethinput')"
+            style=" margin-left: 8px; border: white solid ; background-color: white;" ><i class="fas fa-plus"></i></button></pre></div>
+        <div style="margin-left: 40px; width: 70%; height: 40px; border: solid 2px black; background-color: white; margin-top: 3px;">
+            <a class="nav-link" href="#" style="color: black; margin-left: 20px;"> Add to ...</a></div>
+</div>
+    </div>
+    <div style="width: 100%; height: 40px;margin-top: 50px;">
+        <a href="./Shop.html"  style="margin-left: 50%; color: black;"> <i class="fas fa-angle-left"></i> </a>
+        <a href="./Shop.html"  style="color: black;" >1</a>
+        <a href="./Shop1.html" style="color: black;" >2</a>
+        <a href="./Shop1.html" style="color: black;"> <i class="fas fa-angle-right"></i> </a>
+    </div>
+
+    <div style="width: 1100px; height: 400px; background-color: rgb(34, 88, 57); margin-left: 150px; margin-top: 50px;">
+        <table style="color: white;">
+          <tr>
+            <td>
+              <p style=" margin-left:80px; margin-top: 20px;">Store</p>
+            </td>
+            <td>
+              <p  style=" margin-left:60px ;margin-top: 20px;">Address</p>
+            </td>
+            <td>
+              <p  style=" margin-left:80px ; margin-top: 20px;">Opening Hours</p>
+            </td>
+            <td>
+              <p  style=" margin-left:60px ; margin-top: 20px;">Get It Fresh</p>
+            </td>
+          </tr>
+          
+          <tr">
+            <td >
+            </br>
+              <a class="nav-link" href="#" style="color: white; margin-left: 63px;">ShopAll</a>
+              <a class="nav-link" href="#" style="color: white; margin-left: 63px;">Shipping & Returns</a>
+              <a class="nav-link" href="#" style="color: white; margin-left: 63px;">Store Policy</a>
+              <a class="nav-link" href="#" style="color: white; margin-left: 63px;">FAQ</a>
+            </td>
+            <td>
+            </br>
+          </br>
+            <p style="margin-left: 60px;">500 Terry Francois Street</p>
+            <p style="margin-left: 60px;">San Francisco, CA 94158</p>
+            </td>
+          </br>
+          <td>
+            <p style="margin-left: 80px;">Mon - Fri: 7am - 10pm</p>
+            <p style="margin-left: 80px;">Saturday: 8am - 10pm</p>
+            <p style="margin-left: 80px;">Sunday: 8am - 11pm</p>
+          </td>
+          <td>
+            <p style="margin-left: 60;">Email *</p>
+            <input type="email" style="margin-left: 60px; width: 200px; height: 35px; border: white solid; background-color: rgb(34, 88, 57);"/>
+          </br>
+        
+            <button style="width: 200px; height: 35px; margin-top: 10px; margin-left: 60px;">SUBSCRIBE NOW</button>
+          </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+        <p class="text" style="color: white; margin-left: 78px; margin-top: 78px;" ><i class="far fa-copyright"></i>2023 by Fresh Market. Proudly created with Wix.com</p>
+      </td>
+      <td >
+      </br>
+    </br>
+    </br>
+        <a  class="nav-link" href="https://www.youtube.com/user/Wix"   style="margin-left: 350px; ">
+          <img src="../Online Grocery Store Website Template _ WIX_files/youtube.webp" /></a>
+      </td>
+   
+      <td>
+      </br>
+    </br>
+    </br>
+        <a class="nav-link" href="https://www.instagram.com/wix/" style="margin-left:5px; " >
+          <img src="../Online Grocery Store Website Template _ WIX_files/instagram.webp"/></a>
+      </td>
+      <td>
+      </br>
+    </br>
+    </br>
+        <a class="nav-link" href="https://www.facebook.com/wix" style="margin-left: 5px; "   >
+          <img src="../Online Grocery Store Website Template _ WIX_files/facebook.webp"/></a>
+      </td>
+      </tr>
+      </table>
+      </div>
+</body>
+<script src="./Shop.js" type="text/javascript"></script>
+<script>
+  $('#hide').click(function(){
+   $('.link').hide()
+ })
+ 
+</script>
+</html>
